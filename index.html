@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#040B18" />
+  <meta name="description" content="⚡MR METAR.IA — MR Company. Segurança, privacidade e tecnologia futurista." />
+  <title>⚡MR METAR.IA — MR Company</title>
+
+  <!-- Fonte futurista / moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Background global glow -->
+  <div class="bg-aurora" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#home" aria-label="Ir para Home">
+        <span class="brand__bolt">⚡</span>
+        <span class="brand__name">MR METAR<span class="brand__dot">.IA</span></span>
+      </a>
+
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#todos-usando">Todos estão usando</a>
+        <a href="#o-que-criamos">O que criamos</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#contato">Fale conosco</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost btn--github" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub">
+          <span class="icon">⌁</span>
+          GitHub
+        </a>
+
+        <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <div class="mobile__panel">
+        <a href="#quem-somos" class="mobile__link">Quem somos</a>
+        <a href="#todos-usando" class="mobile__link">Todos estão usando</a>
+        <a href="#o-que-criamos" class="mobile__link">O que criamos</a>
+        <a href="#tecnologias" class="mobile__link">Tecnologias</a>
+        <a href="#contato" class="mobile__link">Fale conosco</a>
+        <a class="btn btn--ghost mobile__github" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <span class="icon">⌁</span> GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Botão GitHub flutuante (extra) -->
+  <a class="fab-github" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub (atalho)">
+    <span>⌁</span>
+  </a>
+
+  <main>
+    <!-- 1) HOME -->
+    <section id="home" class="section hero">
+      <!-- Plano 3D WebGL (Three.js) -->
+      <canvas id="heroCanvas" class="webgl" aria-hidden="true"></canvas>
+
+      <!-- Fundo (imagem + gradiente) com leve profundidade/parallax -->
+      <div class="section__bg section__bg--hero" aria-hidden="true"></div>
+      <div class="section__grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__left reveal">
+          <div class="portrait-wrap">
+            <img class="portrait" src="images/png/emi.png" alt="Emi — MR METAR.IA" loading="eager" />
+            <div class="portrait-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="hero__badge reveal">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            MR Company • Futurista • Privacidade
+          </div>
+
+          <h1 class="hero__title reveal">
+            <span class="title__glow">⚡MR METAR.IA</span>
+          </h1>
+
+          <p class="hero__subtitle reveal">
+            Nosso compromisso é manter a segurança e o desenvolvimento dos nossos usuários,
+            dando a você o controle de sua privacidade e protegendo suas informações.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#contato">Entrar agora</a>
+            <a class="btn btn--ghost" href="#todos-usando">Ver soluções</a>
+          </div>
+
+          <div class="hero__stats reveal">
+            <div class="stat">
+              <div class="stat__num">Neon</div>
+              <div class="stat__label">UI futurista</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">3D</div>
+              <div class="stat__label">WebGL + CSS</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Safe</div>
+              <div class="stat__label">Foco em privacidade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-hint__line"></span>
+        <span class="scroll-hint__text">Role</span>
+      </div>
+    </section>
+
+    <!-- 2) QUEM SOMOS -->
+    <section id="quem-somos" class="section">
+      <div class="section__bg section__bg--dark" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Quem somos</h2>
+          <p class="section__lead">
+            MR Company - Organização multinacional, especializada em desenvolvimento de tecnologia e design,
+            para melhorar o mundo digital.
+          </p>
+          <p class="section__muted">
+            Organização de tecnologia social TS. Criamos conexões e as tecnologias que fazem isso possível,
+            junto com os melhores do mundo.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Futuro primeiro</h3>
+            <p>Design e tecnologia com estética neon, performance e experiência premium.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Privacidade por padrão</h3>
+            <p>Controle, transparência e segurança como base do produto.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Escalável</h3>
+            <p>Arquiteturas modernas, integrações e evolução contínua.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) TODOS ESTÃO USANDO -->
+    <section id="todos-usando" class="section section--parallax">
+      <div class="section__bg section__bg--b2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Todos estão usando</h2>
+          <p class="section__muted">Produtos e soluções conectadas ao ecossistema MR Company.</p>
+        </div>
+
+        <div class="grid3">
+          <a class="tile reveal" href="#" target="_blank" rel="noopener noreferrer" aria-label="Abrir Mercado On">
+            <div class="tile__media">
+              <img src="images/mercado.png" alt="Mercado On" loading="lazy">
+            </div>
+            <div class="tile__body">
+              <div class="tile__title">Mercado On</div>
+              <div class="tile__link">Acessar →</div>
+            </div>
+          </a>
+
+          <a class="tile reveal" href="#" target="_blank" rel="noopener noreferrer" aria-label="Abrir Doc Free">
+            <div class="tile__media">
+              <img src="images/doc.png" alt="Doc Free" loading="lazy">
+            </div>
+            <div class="tile__body">
+              <div class="tile__title">Doc Free</div>
+              <div class="tile__link">Acessar →</div>
+            </div>
+          </a>
+
+          <a class="tile reveal" href="#" target="_blank" rel="noopener noreferrer" aria-label="Abrir E-Book">
+            <div class="tile__media">
+              <img src="images/livro.png" alt="E-Book" loading="lazy">
+            </div>
+            <div class="tile__body">
+              <div class="tile__title">E-Book</div>
+              <div class="tile__link">Acessar →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) O QUE CRIAMOS -->
+    <section id="o-que-criamos" class="section">
+      <div class="section__bg section__bg--b3" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">O que criamos</h2>
+          <p class="section__muted">Produtos digitais completos do conceito ao lançamento.</p>
+        </div>
+
+        <div class="list-wrap reveal">
+          <ul class="fancy-list">
+            <li><span class="pill">Site</span> <strong>Institucional</strong></li>
+            <li><span class="pill">App</span> <strong>Mobile</strong></li>
+            <li><span class="pill">AI</span> <strong>Inteligência Artificial</strong></li>
+            <li><span class="pill">Vlog</span> <strong>Redes sociais</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5) TECNOLOGIAS QUE USAMOS (3D avançado aqui também) -->
+    <section id="tecnologias" class="section tech">
+      <!-- WebGL 3D (Three.js) -->
+      <canvas id="techCanvas" class="webgl webgl--tech" aria-hidden="true"></canvas>
+
+      <div class="section__bg section__bg--dark" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Tecnologias que usamos</h2>
+          <p class="section__muted">Stack moderna para criar experiências rápidas, seguras e escaláveis.</p>
+        </div>
+
+        <!-- Carousel 3D em CSS (ring) + glow -->
+        <div class="tech__stage reveal" aria-label="Carrossel 3D de tecnologias">
+          <div class="tech__ring" id="techRing">
+            <figure class="tech__item"><img src="images/png/android-studio.png" alt="Android Studio" loading="lazy"></figure>
+            <figure class="tech__item"><img src="images/png/flutter.png" alt="Flutter" loading="lazy"></figure>
+            <figure class="tech__item"><img src="images/png/git.png" alt="Git" loading="lazy"></figure>
+            <figure class="tech__item"><img src="images/png/cursor.png" alt="Cursor" loading="lazy"></figure>
+            <figure class="tech__item"><img src="images/png/nodejs.png" alt="NodeJS" loading="lazy"></figure>
+            <figure class="tech__item"><img src="images/png/ios.png" alt="iOS" loading="lazy"></figure>
+          </div>
+
+          <div class="tech__hud" aria-hidden="true">
+            <span class="hud__chip">3D Ring</span>
+            <span class="hud__chip">WebGL Glow</span>
+            <span class="hud__chip">Hover / Touch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6) FALE CONOSCO -->
+    <section id="contato" class="section contact section--parallax">
+      <div class="section__bg section__bg--b1" aria-hidden="true"></div>
+      <div class="container contact__inner">
+        <div class="contact__left reveal">
+          <h2 class="section__title">Fale conosco</h2>
+          <p class="contact__info">
+            <span class="mono">Metar.ia.br</span> |
+            <a href="mailto:metaria@01e-mail.com" class="link">⚡metaria@01e-mail.com</a>
+          </p>
+
+          <div class="contact__card">
+            <div class="contact__line">
+              <span class="dot"></span> Atendimento • Parcerias • Produtos
+            </div>
+            <div class="contact__line">
+              <span class="dot dot--2"></span> Segurança e privacidade como prioridade
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__right reveal">
+          <div class="portrait-wrap portrait-wrap--right">
+            <img class="portrait" src="images/png/emi.png" alt="Emi — Contato MR METAR.IA" loading="lazy" />
+            <div class="portrait-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7) RODAPÉ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__links">
+          <a href="#" class="link">Termos de Serviço</a>
+          <span class="sep">|</span>
+          <a href="#" class="link">Políticas de Privacidade</a>
+        </div>
+
+        <div class="footer__safe">
+          Protegido com criptografia de ponta a ponta 🔒
+        </div>
+
+        <div class="footer__copy">
+          MR Company © <span id="year"></span> — ⚡MR METAR.IA
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Three.js (CDN) -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
